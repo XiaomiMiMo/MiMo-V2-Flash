@@ -253,7 +253,7 @@ curl -i http://localhost:9001/v1/chat/completions \
 > In the thinking mode with multi-turn tool calls, the model returns a `reasoning_content` field alongside `tool_calls`. To continue the conversation, the user must persist all history `reasoning_content` in the `messages` array of each subsequent request.
 
 > [!IMPORTANT]
-> The following system prompts are **HIGHTLY** recommended, please choose from English and Chinese version.
+> The following system prompts are **HIGHLY** recommended, please choose from English and Chinese version.
 
 English
 
