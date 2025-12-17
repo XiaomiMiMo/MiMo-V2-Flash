@@ -197,11 +197,15 @@ MiMo-V2-Flash supports FP8 mixed precision inference. We recommend using **SGLan
 
 ### Quick Start with SGLang
 
-```bash
-pip install sglang
+Following https://lmsys.org/blog/2025-12-16-mimo-v2-flash/, please use the compatible SGLang version as follows.
 
-# Launch server
-python3 -m sglang.launch_server \
+```bash
+pip install sglang==0.5.6.post2.dev8005+pr.15207.g39d5bd57a \
+  --index-url https://sgl-project.github.io/whl/pr/ \
+  --extra-index-url https://pypi.org/simple
+
+#Launch the server
+SGLANG_ENABLE_SPEC_V2=1 python3 -m sglang.launch_server \
         --model-path XiaomiMiMo/MiMo-V2-Flash \
         --served-model-name mimo-v2-flash \
         --pp-size 1 \
