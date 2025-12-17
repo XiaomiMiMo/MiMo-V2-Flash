@@ -195,8 +195,6 @@ To support high-throughput RL training for large-scale MoE models, we implemente
 
 MiMo-V2-Flash supports FP8 mixed precision inference. We recommend using **SGLang** for optimal performance.
 
-Usage Recommendations: we recommend setting the sampling parameters to `temprature=0.8, top_p=0.95`.
-
 ### Quick Start with SGLang
 
 ```bash
@@ -249,8 +247,7 @@ curl -i http://localhost:9001/v1/chat/completions \
 
 ### Notifications
 
-> [!IMPORTANT]
-> In the thinking mode with multi-turn tool calls, the model returns a `reasoning_content` field alongside `tool_calls`. To continue the conversation, the user must persist all history `reasoning_content` in the `messages` array of each subsequent request.
+#### 1. System prompt
 
 > [!IMPORTANT]
 > The following system prompts are **HIGHLY** recommended, please choose from English and Chinese version.
@@ -270,6 +267,20 @@ Chinese
 
 今天的日期：{date} {week}，你的知识截止日期是2024年12月。
 ```
+
+#### 2. Sampling parameters
+
+> [!IMPORTANT]
+> Recommended sampling parameters:
+> 
+> `temperature=0.8` for math, writing, web-dev
+> 
+> `temperature=0.3` for agentic taks (e.g., vibe-coding, tool-use)
+
+#### 3. Tool-use practice
+
+> [!IMPORTANT]
+> In the thinking mode with multi-turn tool calls, the model returns a `reasoning_content` field alongside `tool_calls`. To continue the conversation, the user must persist all history `reasoning_content` in the `messages` array of each subsequent request.
 
 -----
 
