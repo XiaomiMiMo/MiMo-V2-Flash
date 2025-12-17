@@ -272,6 +272,8 @@ Chinese
 
 > [!IMPORTANT]
 > Recommended sampling parameters:
+>
+> `top_p=0.95`
 > 
 > `temperature=0.8` for math, writing, web-dev
 > 
