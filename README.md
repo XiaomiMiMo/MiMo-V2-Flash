@@ -299,7 +299,7 @@ If you find our work helpful, please cite our technical report:
   title={MiMo-V2-Flash Technical Report},
   author={LLM-Core Xiaomi},
   year={2025},
-  url={https://github.com/XiaomiMiMo/MiMo-V2-Flash/paper.pdf}
+  url={https://github.com/XiaomiMiMo/MiMo-V2-Flash/blob/main/paper.pdf}
 }
 ```
 
