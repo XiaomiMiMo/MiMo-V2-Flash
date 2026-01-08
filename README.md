@@ -295,11 +295,14 @@ Chinese
 If you find our work helpful, please cite our technical report:
 
 ```bibtex
-@misc{mimo2025flash,
-  title={MiMo-V2-Flash Technical Report},
-  author={LLM-Core Xiaomi},
-  year={2025},
-  url={https://github.com/XiaomiMiMo/MiMo-V2-Flash/blob/main/paper.pdf}
+@misc{xiao2026mimov2flashtechnicalreport,
+      title={MiMo-V2-Flash Technical Report}, 
+      author={LLM-Core Xiaomi},
+      year={2026},
+      eprint={2601.02780},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.02780}, 
 }
 ```
 
